@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../icons/menu_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="menu">
+            <a href="../index.html">Ecommerce Shop</a>
+            <ul class="options">
+                <li><a href="../index.html"><img src="../icons/home_FILL0_wght400_GRAD0_opsz24.svg" alt="">Inicio</a></li>
+                <li><a href="./shop.html"><img src="../icons/storefront_FILL0_wght400_GRAD0_opsz24.svg" alt="">Productos</a></li>
+                <li><a href="./cart.html"><img src="../icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg" alt="">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="products-all"">
+        <div class="filters">
+            <h2>Filtrar</h2>
+            <div class="filters-form">
+
+                <div class="categoryFilter">
+                    <label for="categoryFilter">Filtrar por categoria</label>
+                    <select name="categoryFilter" id="categoryFilter" >
+                        <option value="all" selected>Todos</option>
+                        <option value="moda" >Moda</option>
+                        <option value="tecnologia">tecnologia</option>
+                        <option value="muebles">Muebles</option>
+                    </select>
+                </div>
+                <div class="priceFilter">
+                    <label for="priceFilter">Filtrar por precio</label>
+                    <select name="priceFilter" id="priceFilter" >
+                        <option value="all" selected>Sin filtro</option>
+                        <option value="mayor" >De mayor a menor</option>
+                        <option value="menor">De menor a mayor</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="products-container">
+
+        </div>
+    </section>
+    
+    <script type="module" src="../menu.js"></script>
+    <script type="module" src="./js/shop.js"></script>
+</body>
+</html>
